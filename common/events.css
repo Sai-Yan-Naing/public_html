@@ -1,0 +1,434 @@
+@charset "utf-8";
+
+
+/*--------------------------------------------------
+
+ * イベント一覧
+
+--------------------------------------------------*/
+@media (min-width: 769px){}
+@media (max-width: 768px){}
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------
+
+ * イベント 地域別
+
+--------------------------------------------------*/
+
+
+
+
+.g-page-list{
+	font-size: .8125em;
+	
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+.g-page-list .page-list__more{
+	padding-left: 0;
+	padding-right: 0;
+	border-width: .16em;
+}
+
+
+
+
+
+.event-list3{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.event-list3__item + .event-list3__item{
+	margin-top: 3.75em;
+}
+.title2--event-list3{
+	margin-bottom: 1.25em;
+}
+
+
+
+
+.pref-summary{}
+.title5--pref-summary{
+	margin-top: 0;
+	margin-bottom: 0;
+	
+	margin-bottom: 3.75rem;
+}
+.pref-summary__title{
+	line-height: 1.33;
+	font-size: 1.125em;
+	
+	margin: 0;
+	padding: 0;
+	margin-bottom: .5em;
+	
+	color: #f90;
+}
+.pref-summary__note{
+	margin: 0;
+	padding: 0;
+}
+.pref-summary .table3{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+
+
+
+
+
+/*--------------------------------------------------
+
+ * イベント詳細
+
+--------------------------------------------------*/
+
+.schedule-display{
+	color: #fff;
+	background-color: #f90;
+	
+	text-align: center;
+	
+	margin-top: -3.75em;
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
+}
+@media (max-width: 768px){
+	.schedule-display{
+		font-size: .6em;
+		margin-top: -3.125em;
+	}
+}
+.schedule-display__data{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	
+	margin-bottom: 1em;
+}
+.schedule-display__pref,
+.schedule-display__date,
+.schedule-display__week,
+.schedule-display__time,
+.schedule-display__place{
+	margin: 0;
+	padding: 0;
+	line-height: 1.33;
+}
+.schedule-display__pref,
+.schedule-display__date,
+.schedule-display__week,
+.schedule-display__time{
+	margin-right: 1rem;
+}
+
+.schedule-display__pref{
+	font-size: 1.625em;
+	
+	padding: .5em 1em;
+	
+	color: #f90;
+	background-color: #fff;
+}
+.schedule-display__date{
+	font-size: 3.875em;
+	font-weight: bold;
+}
+.schedule-display__week{
+	line-height: 1;
+	font-size: 1.5em;
+	
+	color: #f90;
+	background-color: #fff;
+	border-radius: 1.33em;
+	
+	padding: .33em;
+}
+.schedule-display__time{
+	font-size: 2.375em;
+	font-weight: bold;
+}
+.schedule-display__place{
+	font-size: 2em;
+	font-style: normal;
+}
+@media (max-width: 768px){
+	.schedule-display__pref,
+	.schedule-display__date,
+	.schedule-display__week,
+	.schedule-display__time{
+		margin-right: .5rem;
+	}
+	
+}
+
+
+
+.contents-nav{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+	display: flex;
+	
+	position: relative;
+	
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 1px 1px 0 0;
+}
+.contents-nav__item{
+	box-sizing: border-box;
+	
+	flex: 1 1;
+	display: flex;
+	
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 0 0 1px 1px;
+}
+.contents-nav__more{
+	line-height: 1.33;
+	text-align: center;
+	
+	flex: 1 1 auto;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	font-size: 1.25em;
+	font-weight: bold;
+	text-decoration: inherit;
+	
+	color: #0171B1;
+	background-color: #fff;
+	
+	padding: 1em 0;
+	
+	position: relative;
+	z-index: 0;
+	
+	border-bottom: 1.5em solid;
+}
+.contents-nav__more:hover{
+	text-decoration: underline;
+}
+.contents-nav__more:after{
+	content: "";
+	
+	display: block;
+	
+	width: .75em;
+	height: .75em;
+	box-sizing: border-box;
+	
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -1.2em;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 .208em .208em 0;
+	
+	transform: translateY(-33%) rotate(45deg);
+	
+	transition: transform 50ms ease-out;
+}
+.contents-nav__more:hover:after{
+	transform: translateY(0) rotate(45deg);
+}
+
+@media (min-width: 769px){
+	.contents-nav{}
+	.contents-nav__item{}
+	.contents-nav__more{}
+}
+@media (max-width: 768px){
+	.contents-nav{
+		flex-wrap: wrap;
+	}
+	.contents-nav__item{
+		flex: 1 1 33.33%;
+	}
+	.contents-nav__more{
+		font-size: 1em;
+	}
+}
+
+
+
+
+
+
+
+@media (min-width: 769px){
+	.detail-columns{
+		margin-bottom: -6.25em;
+	}
+}
+@media (max-width: 768px){
+	.detail-columns{
+		margin-bottom: -3.125em;
+	}
+}
+
+
+
+
+
+
+.g-contents-nav{
+	position: relative;
+	z-index: 0;
+	
+	margin-bottom: 6.25em;
+}
+.g-contents-nav:before{
+	content: "";
+	
+	display: block;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 50%;
+	
+	background-color: #f90;
+}
+
+@media (max-width: 768px){
+	.g-contents-nav{
+		margin-bottom: 3.125em;
+	}
+	.g-contents-nav:before{
+		display: none;
+	}
+	.g-contents-nav > .sitewidth{
+		box-sizing: border-box;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+
+
+
+
+
+.join-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.join-list__item{
+	box-sizing: border-box;
+}
+.join-list__more{
+	display: block;
+	color: inherit;
+}
+.join-list-photo{
+	margin-bottom: 1em;
+	border: 1px solid #ccc;
+}
+.join-list-photo__data{
+	width: 100%;
+}
+.join-list__name{
+	font-size: 1.25em;
+	font-weight: normal;
+	
+	margin: 0;
+	padding: 0;
+}
+
+.join-list .slick-slide:not(:last-child) > div{
+	margin-left: 1.25em;
+}
+.join-list .slick-list{
+	margin-left: -1.25em;
+}
+.join-list .slick-arrow{
+	top: -3.375em;
+	bottom: 3.375em;
+}
+.join-list .slick-dots{
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+}
+
+
+
+
+
+
+.event-list-column{
+	overflow: hidden;
+}
+
+
+
+
+
+
+.event-column{}
+.event-column__section{}
+.event-column__section + .event-column__section{
+	margin-top: 2.5em;
+}
+.title5--event-column{
+	/*margin-top: -5rem;*/
+	margin-top: 0;
+	margin-bottom: 3.75rem;
+}
+.title2--event-column{
+	margin: 0;
+	margin-bottom: 1em;
+}
+.event-column__note{
+	margin: 0;
+	padding: 0;
+}
+.event-column__note + .event-column__note{
+	margin-top: 1em;
+}
+
+
+
+
+
+
+.advantage-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.advantage-list__item:not(:last-child){
+	margin-bottom: 2.5em;
+}
+
+
+
+
+
+
+@media (min-width: 769px){}
+@media (max-width: 768px){}

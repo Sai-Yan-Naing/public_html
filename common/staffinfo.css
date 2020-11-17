@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+
+/*--------------------------------------------------
+
+ * スタッフ一覧
+
+--------------------------------------------------*/
+@media (min-width: 769px){}
+@media (max-width: 768px){}
+
+.staff-menu{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+	margin-top: 5em;
+	margin-bottom: 5em;
+	
+	display: flex;
+	flex-wrap: wrap;
+	
+	margin-left: -1%;
+}
+.staff-menu__item{
+	flex: 1 1 auto;
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+.staff-menu__more{}
+.staff-menu__more--recruit{}
+.staff-menu__more--event{}
+.staff-menu__more--plan{}
+.staff-menu__more--office{}
+
+.button3--recruit,
+.button3--event,
+.button3--plan,
+.button3--office{
+	padding: .25em 1.25em;
+}
+
+.button3--recruit		{ color: #0071b0; border-color: #0071b0; }
+.button3--event			{ color: #40933b; border-color: #40933b; }
+.button3--plan			{ color: #068ca0; border-color: #068ca0; }
+.button3--office		{ color: #6b690b; border-color: #6b690b; }
+
+.button3--recruit:hover	{ color: #fff; background-color: #0071b0; border-color: transparent; }
+.button3--event:hover	{ color: #fff; background-color: #40933b; border-color: transparent; }
+.button3--plan:hover	{ color: #fff; background-color: #068ca0; border-color: transparent; }
+.button3--office:hover	{ color: #fff; background-color: #6b690b; border-color: transparent; }
+
+.button3--recruit:hover,
+.button3--event:hover,
+.button3--plan:hover,
+.button3--office:hover{
+	transform: scale(1);
+}
+
+
+
+
+.staff-list__group{}
+.staff-list__group + .staff-list__group{
+	margin-top: 5em;
+}
+.staff-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+	
+	display: flex;
+	flex-wrap: wrap;
+	
+	margin-left: -1.5%;
+	margin-bottom: -5em;
+}
+.staff-list__item{
+	box-sizing: border-box;
+	
+	margin-left: 1.5%;
+	margin-bottom: 5em;
+	
+	position: relative;
+	z-index: 0;
+	
+	display: flex;
+}
+
+@media (min-width: 769px){
+	.staff-list__item{
+		flex: 0 0 23.5%;
+	}
+}
+@media (max-width: 768px){
+	.staff-list{
+		margin-left: -6%;
+	}
+	.staff-list__item{
+		flex: 0 0 44%;
+		margin-left: 6%;
+	}
+}
+
+.staff-list__more1{
+	display: block;
+	color: inherit;
+	text-decoration: inherit;
+	
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.staff-list__more1:hover{
+}
+.staff-list__more2{
+	font-size: .875em;
+	font-weight: bold;
+	
+	color: #0071b0;
+}
+.staff-list__more1:not(:hover) .staff-list__more2{
+	text-decoration: underline;
+}
+.staff-list__more2:after{
+	content: " >";
+}
+.staff-list__post{
+	color: #fff;
+	padding: .5em 1.5em;
+	text-align: center;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	transform: translateY(-50%);
+}
+.staff-list__post--recruit	{ background-color: rgba(0, 113, 176, .6); }
+.staff-list__post--event	{ background-color: rgba(64, 147, 59, .6); }
+.staff-list__post--plan		{ background-color: rgba(6, 140, 160, .6); }
+.staff-list__post--office	{ background-color: rgba(107, 105, 11, .6); }
+.staff-list__photo{
+	margin-bottom: 1.25em;
+	
+	transition: outline 180ms ease-out;
+	outline: .5em solid transparent;
+}
+.staff-list__more1:hover .staff-list__photo{
+	outline: .125em solid #0071b0;
+	transition-duration: 300ms;
+}
+.staff-list__portrait{
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #f1f1f1;
+}
+.staff-list__comment{
+	font-size: .875em;
+	
+	margin: 0;
+	padding: 0;
+	
+	margin-bottom: 2.5em;
+}
+.staff-list__comment:before{
+	content: "コメント：";
+	display: block;
+	
+	font-size: 1.28em;
+}
+.staff-list__nav{
+	text-align: right;
+	margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------
+
+ * スタッフ詳細
+
+--------------------------------------------------*/
+
+/* 共通設定 */
+.title5--staff-detail{
+	margin-top: 0;
+	margin-bottom: 3.75rem;
+}
+@media (max-width: 768px){
+	.g-staffdetail .g-contents{
+		margin-top: 0;
+	}
+}
+
+
+
+/* header */
+
+.staff-info{
+	box-sizing: border-box;
+	max-width: 1200px;
+	min-width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media (min-width: 769px){}
+@media (max-width: 768px){
+	.staff-info{
+		/*padding-left: 6%;
+		padding-right: 6%;*/
+	}
+}
+
+
+
+.staff-info__portrait{
+	width: 100%;
+}
+.staff-info__message{
+	margin: 0;
+	padding: 0;
+	
+	margin-top: 1em;
+}
+.staff-info__em{
+	font-size: 1.125em;
+	font-weight: bold;
+	font-style: normal;
+}
+
+@media (min-width: 769px){}
+@media (max-width: 768px){}
+
+
+
+.staff-info-grid{}
+.staff-info-grid__photo,
+.staff-info-grid__notes{
+	box-sizing: border-box;
+}
+.staff-info-grid__photo{}
+.staff-info-grid__notes{
+	color: #fff;
+	background-color: rgba(0, 113, 176, .7);
+	
+	padding: 1.75em;
+}
+
+@media (min-width: 769px){
+	.staff-info-grid{
+		display: flex;
+	}
+	.staff-info-grid__photo{
+		flex: 0 0 58.33%;
+		margin-right: -8.33%;
+	}
+	.staff-info-grid__notes{
+		flex: 1 1 50%;
+		align-self: center;
+		z-index: 1;
+		
+		margin-top: 2.125em;
+		margin-bottom: 2.125em;
+	}
+}
+@media (max-width: 768px){}
+
+
+
+.staff-header{
+	font-size: 1em;
+	font-weight: normal;
+	
+	margin: 0;
+	padding: 0;
+}
+.staff-header__post{
+	line-height: 1;
+	font-size: 3.75em;
+	
+	margin-bottom: 1rem;
+}
+.staff-header__pref,
+.staff-header__career{
+	line-height: 1.8;
+	font-size: 1.25em;
+}
+
+@media (min-width: 769px){}
+@media (max-width: 768px){}
+
+
+
+/* profile */
+.profile{}
+.profile + .profile{
+	margin-top: 2.5em;
+}
+.title2--profile{
+	margin: 0;
+}
+.profile__note{
+	margin: 0;
+	padding: 0;
+}
+.title2--profile + .profile__note,
+.profile__note + .profile__note{
+	margin-top: .5em;
+}
+
+
+
+
+/* goal */
+.goal__photo{
+	max-width: 100%;
+}
+
+
+
+
+/* staff detail pager */
+.staff-pager{
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px){}
+@media (max-width: 768px){}
