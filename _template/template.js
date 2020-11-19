@@ -142,8 +142,8 @@ function mod__header( path, option ){
 	ret.push('				<ul class="gn-external-list">');
 	ret.push('					<li class="gn-external-list__item"><a class="gn__more2" target="_blank" href="https://event.meetscompany.jp/session/24727/">22卒向け合同説明会予約</a></li>');
 	ret.push('					<li class="gn-external-list__item"><a class="gn__more2" target="_blank" href="https://event.meetscompany.jp/session/22978/">21卒向け合同説明会予約</a></li>');
-	ret.push('					<li class="gn-external-list__item"><a class="gn__more2" target="_blank" href="https://discussion.meetscompany.jp/181/">就活サポート</a></li>');
-	ret.push('					<li class="gn-external-list__item"><a class="gn__more2" target="_blank" href="https://discussion.meetscompany.jp/103/">就活面談サービス</a></li>');
+	/*ret.push('					<li class="gn-external-list__item"><a class="gn__more2" target="_blank" href="https://discussion.meetscompany.jp/181/">就活サポート</a></li>');*/
+	ret.push('					<li class="gn-external-list__item"><a class="gn__more2" target="_blank" href="https://discussion.meetscompany.jp/181/">就活面談サービス</a></li>');
 	ret.push('				</ul>');
 	ret.push('				<ul class="gn-sns">');
 	ret.push('					<li class="gn-sns__item"><a class="gn-sns__more" rel="nofollow" target="_blank" href="https://twitter.com/Meets_Company?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="gn-sns__icon" src="'+ path +'img/base/gn-sns--twitter.svg" alt="アイコン">Twitter</a></li>');

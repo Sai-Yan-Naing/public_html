@@ -806,6 +806,7 @@
 	
 	counter-increment: i;
 }
+
 .point-list__item:before{
 	content: "Point." counter(i);
 	
@@ -830,6 +831,11 @@
 @media (max-width: 768px){
 	.point-list__item:before{
 		font-size: 4em;
+	}
+}
+@media all and (-ms-high-contrast:none) and (max-width: 768px){
+	.point-list__item:before{
+		font-size: .175em;
 	}
 }
 .point-list__more{
@@ -890,6 +896,14 @@
 		flex: 0 0 31.33%;
 	}
 }
+
+@media all and (-ms-high-contrast: none) and (min-width: 769px){
+	.point-list__item{
+		flex: 0 0 27%;
+	}
+}
+
+
 @media (max-width: 768px){
 	.point-list__item{
 		line-height: 1.66;
@@ -901,7 +915,17 @@
 		margin-bottom: 2%;
 	}
 }
-
+@media all and (-ms-high-contrast: none) and (max-width: 768px){
+	.point-list__item{
+		line-height: 1.66;
+		font-size: .875em;
+		
+		flex: 0 0 39%;
+	}
+	.point-list__item:not(:last-child){
+		margin-bottom: 2%;
+	}
+}
 
 .point-modal__heading{
 	line-height: 1.5;

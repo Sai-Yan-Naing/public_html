@@ -653,14 +653,9 @@ _::-webkit-full-page-media, _:future, :root input, :root textarea, :root select{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	
-	transition-duration: 200ms;
-	transition-timing-function: ease-out;
-	transition-property: opacity visibility;
 }
 .js-stick--ignition .js-sticky__target:not(.js-sticky--active){
-	opacity: 0;
-	visibility: hidden;
+	position: static;
 }
 
 
@@ -3490,6 +3485,12 @@ textarea.input1{
 .page-header1__mascot{
 	max-width: 100%;
 }
+@media all and (-ms-high-contrast: none) and (min-width: 769px){
+.page-header1__mascot{
+	max-width: 100%;
+	padding-top: 2em;
+	}
+}
 
 @media (min-width: 769px){
 	.page-header1{
@@ -3901,6 +3902,12 @@ textarea.input1{
 @media (min-width: 769px){
 	.fn-sns__icon{
 		width: 40px;
+	}
+}
+@media all and (-ms-high-contrast: none) and (min-width: 769px){
+.fn-sns__icon{
+	width: 40px;
+	height: 40px;
 	}
 }
 @media (max-width: 768px){

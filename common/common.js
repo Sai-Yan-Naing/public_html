@@ -24,6 +24,9 @@ $(function(){
 	
 	countUpAnimation();
 	
+	
+	forIE__anchor();
+	
 });
 
 $(window).on("load", function(){
@@ -33,6 +36,35 @@ $(window).on("load", function(){
 	checkAll();
 	
 });
+
+
+
+function forIE__anchor(){
+	
+	var trigger = "a[href^='#']";
+	
+	var ua = navigator.userAgent.toLowerCase();
+	var is_ie = ( ua.indexOf("msie") > 0 || ua.indexOf("trident") > 0 );
+	
+	if( ! is_ie )				{ return false; }
+	if( ! $(trigger).length )	{ return false; }
+	
+	$(trigger).on("click", function(){
+		
+		var target = $(this).attr("href");
+		var goal = $(target).offset().top;
+		
+		location.hash = target;
+		
+		$("html").stop().animate({
+			scrollTop: goal
+		});
+		
+		return false;
+		
+	});
+	
+}
 
 
 

@@ -59,10 +59,12 @@ function stickyForIE(){
 	
 	$(scope).addClass(ignition);
 	
+	var scope_end	= getScopeEnd();
+	
 	var throttle = eventThrottle(function(){
 		
 		var scope_start	= $(scope).offset().top - $(window).height();
-		var scope_end	= $(scope).offset().top + $(scope).outerHeight() - $(window).height();
+		//var scope_end	= $(scope).offset().top + $(scope).outerHeight() - $(window).height();
 		
 		if(
 			$(window).scrollTop() > scope_start &&
@@ -76,6 +78,15 @@ function stickyForIE(){
 	}, 1000 / 60);
 	
 	$(window).on("scroll", throttle);
+	$(window).on("resize", function(){
+		scope_end	= getScopeEnd();
+	})
+	
+	function getScopeEnd(){
+		
+		return $(scope).offset().top + $(scope).outerHeight() - $(window).height();
+		
+	}
 	
 }
 
